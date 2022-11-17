@@ -21,7 +21,7 @@ while True:
 		break
 
 tk = Tk()
-tk.title("ORBITVIEWER")
+tk.title("ORBIT SIMULATOR")
 r1 = ap+6378#до центра земли
 r2 = pr+6378
 #вычесления
@@ -48,7 +48,7 @@ def update_labs():
 	global pr
 	global r1
 	global r2
-	#ох***ая система обновления переменных
+	#система обновления переменных
 	vel_label.config(text=(velkm, 'km/s'))
 	alt_label.config(text=('alt:', alt, 'km'))
 	a = (r1+r2)/2
@@ -62,7 +62,7 @@ def update_labs():
 
 
 while True:
-	#новая высота
+	#обнова высоты
 	print("New altitude(km):")
 	alt = int(input())
 	if alt > ap or alt < pr:
